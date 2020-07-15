@@ -1,0 +1,47 @@
+name: "dbt_snowflake_finance"
+
+config-version: 2
+version: 1.0.0
+
+profile: "waterfront_analytics"
+
+source-paths: ["models"]
+data-paths: ["data"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+docs-paths: ["docs"]
+
+target-path: "target"
+log-path: "logs"
+modules-path: "dbt_modules"
+
+# clean-targets: [directorypath]
+
+query-comment: "executed by dbt"
+
+# require-dbt-version: version-range | [version-range]
+
+quoting:
+  database: false
+  schema: false
+  identifier: false
+
+models:
+  dbt_snowflake_finance:
+      # Applies to all files under models/example/
+      example:
+          materialized: view
+
+# seeds:
+#   <seed-configs>
+
+# snapshots:
+#   <snapshot-configs>
+
+# sources:
+#   <source-configs>
+
+# on-run-start: sql-statement | [sql-statement]
+# on-run-end: sql-statement | [sql-statement]

@@ -1,0 +1,1005 @@
+2020-07-15 15:09:27.395087 (MainThread): Running with dbt=0.17.0
+2020-07-15 15:09:27.943763 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\abize\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 15:09:27.944732 (MainThread): Tracking: tracking
+2020-07-15 15:09:27.948772 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FC6B510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FC6B530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FC6B210>]}
+2020-07-15 15:09:27.984776 (MainThread): Partial parsing not enabled
+2020-07-15 15:09:27.993764 (MainThread): Parsing macros\core.sql
+2020-07-15 15:09:28.002763 (MainThread): Parsing macros\adapters\common.sql
+2020-07-15 15:09:28.082936 (MainThread): Parsing macros\etc\datetime.sql
+2020-07-15 15:09:28.104726 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-07-15 15:09:28.106784 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-07-15 15:09:28.109761 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-07-15 15:09:28.113726 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-07-15 15:09:28.116761 (MainThread): Parsing macros\etc\query.sql
+2020-07-15 15:09:28.118762 (MainThread): Parsing macros\materializations\helpers.sql
+2020-07-15 15:09:28.132761 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-07-15 15:09:28.159730 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-07-15 15:09:28.164731 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-07-15 15:09:28.178728 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-07-15 15:09:28.220724 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-07-15 15:09:28.276728 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-07-15 15:09:28.280724 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-07-15 15:09:28.308725 (MainThread): Parsing macros\materializations\table\table.sql
+2020-07-15 15:09:28.320724 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-07-15 15:09:28.329762 (MainThread): Parsing macros\materializations\view\view.sql
+2020-07-15 15:09:28.341763 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-07-15 15:09:28.345764 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-07-15 15:09:28.347764 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-07-15 15:09:28.349761 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-07-15 15:09:28.352761 (MainThread): Parsing macros\adapters.sql
+2020-07-15 15:09:28.388728 (MainThread): Parsing macros\catalog.sql
+2020-07-15 15:09:28.392770 (MainThread): Parsing macros\materializations\incremental.sql
+2020-07-15 15:09:28.408770 (MainThread): Parsing macros\materializations\merge.sql
+2020-07-15 15:09:28.412771 (MainThread): Parsing macros\materializations\table.sql
+2020-07-15 15:09:28.418769 (MainThread): Parsing macros\materializations\view.sql
+2020-07-15 15:09:28.456774 (MainThread): Partial parsing not enabled
+2020-07-15 15:09:28.512724 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:09:28.512724 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:09:28.559728 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:09:28.560730 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:09:28.938826 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 15:09:28.939827 (MainThread): 
+2020-07-15 15:09:28.940825 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 15:09:28.941823 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:09:28.947827 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_analytics".
+2020-07-15 15:09:28.947827 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 15:09:28.975868 (ThreadPoolExecutor-0_0): Using snowflake connection "list_analytics".
+2020-07-15 15:09:28.976864 (ThreadPoolExecutor-0_0): On list_analytics: /* executed by dbt */
+
+    show terse schemas in database analytics
+    limit 10000
+2020-07-15 15:09:29.309825 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='c:\\users\\abize\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\certifi\\cacert.pem'>
+2020-07-15 15:09:30.379944 (ThreadPoolExecutor-0_0): Snowflake query id: 019595cd-0036-b610-0000-00001185c70d
+2020-07-15 15:09:30.379944 (ThreadPoolExecutor-0_0): Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+2020-07-15 15:09:30.380941 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2020-07-15 15:09:30.380941 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2020-07-15 15:09:30.381904 (MainThread): Connection 'master' was properly closed.
+2020-07-15 15:09:30.381904 (MainThread): Connection 'list_analytics' was left open.
+2020-07-15 15:09:30.381904 (MainThread): On list_analytics: Close
+2020-07-15 15:09:30.434899 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FDB3550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FD62FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FD625D0>]}
+2020-07-15 15:09:30.434899 (MainThread): Flushing usage events
+2020-07-15 15:09:30.875903 (MainThread): Encountered an error:
+2020-07-15 15:09:30.875903 (MainThread): Runtime Error
+  Database error while listing schemas in database "analytics"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+2020-07-15 15:09:30.901909 (MainThread): Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 158, in exception_handler
+    yield
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\cursor.py", line 597, in execute
+    errvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 97, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 73, in default_errorhandler
+    done_format_msg=errorvalue.get(u'done_format_msg'))
+snowflake.connector.errors.ProgrammingError: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 102, in list_schemas
+    kwargs={'database': database}
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 976, in execute_macro
+    result = macro_function(**kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 96, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 228, in execute
+    fetch=fetch
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 119, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 306, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 82, in add_query
+    return connection, cursor
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 177, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002043 (02000): SQL compilation error:
+  Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 212, in run_from_args
+    results = task.run()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 489, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 425, in result
+    return self.__get_result()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 470, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 109, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "analytics"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+2020-07-15 15:09:53.991420 (MainThread): Running with dbt=0.17.0
+2020-07-15 15:09:54.527471 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\abize\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 15:09:54.528473 (MainThread): Tracking: tracking
+2020-07-15 15:09:54.528473 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10607490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10607670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10607790>]}
+2020-07-15 15:09:54.569472 (MainThread): Partial parsing not enabled
+2020-07-15 15:09:54.575472 (MainThread): Parsing macros\core.sql
+2020-07-15 15:09:54.583471 (MainThread): Parsing macros\adapters\common.sql
+2020-07-15 15:09:54.677472 (MainThread): Parsing macros\etc\datetime.sql
+2020-07-15 15:09:54.696472 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-07-15 15:09:54.698472 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-07-15 15:09:54.701472 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-07-15 15:09:54.705471 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-07-15 15:09:54.709472 (MainThread): Parsing macros\etc\query.sql
+2020-07-15 15:09:54.711472 (MainThread): Parsing macros\materializations\helpers.sql
+2020-07-15 15:09:54.725473 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-07-15 15:09:54.750473 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-07-15 15:09:54.753471 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-07-15 15:09:54.767471 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-07-15 15:09:54.809471 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-07-15 15:09:54.862470 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-07-15 15:09:54.866472 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-07-15 15:09:54.901472 (MainThread): Parsing macros\materializations\table\table.sql
+2020-07-15 15:09:54.915470 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-07-15 15:09:54.925471 (MainThread): Parsing macros\materializations\view\view.sql
+2020-07-15 15:09:54.937471 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-07-15 15:09:54.941472 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-07-15 15:09:54.943472 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-07-15 15:09:54.945472 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-07-15 15:09:54.949473 (MainThread): Parsing macros\adapters.sql
+2020-07-15 15:09:54.991472 (MainThread): Parsing macros\catalog.sql
+2020-07-15 15:09:54.994471 (MainThread): Parsing macros\materializations\incremental.sql
+2020-07-15 15:09:55.013470 (MainThread): Parsing macros\materializations\merge.sql
+2020-07-15 15:09:55.017471 (MainThread): Parsing macros\materializations\table.sql
+2020-07-15 15:09:55.024471 (MainThread): Parsing macros\materializations\view.sql
+2020-07-15 15:09:55.068473 (MainThread): Partial parsing not enabled
+2020-07-15 15:09:55.129476 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:09:55.129476 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:09:55.187472 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:09:55.187472 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:09:55.631539 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 15:09:55.632534 (MainThread): 
+2020-07-15 15:09:55.632534 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 15:09:55.632534 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:09:55.639535 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_analytics".
+2020-07-15 15:09:55.640536 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 15:09:55.660576 (ThreadPoolExecutor-0_0): Using snowflake connection "list_analytics".
+2020-07-15 15:09:55.661574 (ThreadPoolExecutor-0_0): On list_analytics: /* executed by dbt */
+
+    show terse schemas in database analytics
+    limit 10000
+2020-07-15 15:09:55.940679 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='c:\\users\\abize\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\certifi\\cacert.pem'>
+2020-07-15 15:09:56.358099 (ThreadPoolExecutor-0_0): Snowflake query id: 019595cd-00af-fcbe-0000-00001185d6f1
+2020-07-15 15:09:56.358099 (ThreadPoolExecutor-0_0): Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+2020-07-15 15:09:56.358099 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2020-07-15 15:09:56.358099 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2020-07-15 15:09:56.359099 (MainThread): Connection 'master' was properly closed.
+2020-07-15 15:09:56.359099 (MainThread): Connection 'list_analytics' was left open.
+2020-07-15 15:09:56.359099 (MainThread): On list_analytics: Close
+2020-07-15 15:09:56.405001 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10714070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10714470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10714330>]}
+2020-07-15 15:09:56.405001 (MainThread): Flushing usage events
+2020-07-15 15:09:56.743476 (MainThread): Encountered an error:
+2020-07-15 15:09:56.743476 (MainThread): Runtime Error
+  Database error while listing schemas in database "analytics"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+2020-07-15 15:09:56.755475 (MainThread): Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 158, in exception_handler
+    yield
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\cursor.py", line 597, in execute
+    errvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 97, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 73, in default_errorhandler
+    done_format_msg=errorvalue.get(u'done_format_msg'))
+snowflake.connector.errors.ProgrammingError: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 102, in list_schemas
+    kwargs={'database': database}
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 976, in execute_macro
+    result = macro_function(**kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 96, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 228, in execute
+    fetch=fetch
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 119, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 306, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 82, in add_query
+    return connection, cursor
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 177, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002043 (02000): SQL compilation error:
+  Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 212, in run_from_args
+    results = task.run()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 489, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 425, in result
+    return self.__get_result()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 470, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 109, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "analytics"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+2020-07-15 15:11:11.723187 (MainThread): Running with dbt=0.17.0
+2020-07-15 15:11:12.252188 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\abize\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 15:11:12.253185 (MainThread): Tracking: tracking
+2020-07-15 15:11:12.253185 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FD07670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FD074F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FD076D0>]}
+2020-07-15 15:11:12.291188 (MainThread): Partial parsing not enabled
+2020-07-15 15:11:12.297186 (MainThread): Parsing macros\core.sql
+2020-07-15 15:11:12.305185 (MainThread): Parsing macros\adapters\common.sql
+2020-07-15 15:11:12.372216 (MainThread): Parsing macros\etc\datetime.sql
+2020-07-15 15:11:12.385232 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-07-15 15:11:12.386187 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-07-15 15:11:12.389246 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-07-15 15:11:12.391245 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-07-15 15:11:12.394244 (MainThread): Parsing macros\etc\query.sql
+2020-07-15 15:11:12.396245 (MainThread): Parsing macros\materializations\helpers.sql
+2020-07-15 15:11:12.406214 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-07-15 15:11:12.426244 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-07-15 15:11:12.429243 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-07-15 15:11:12.438244 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-07-15 15:11:12.466215 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-07-15 15:11:12.505224 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-07-15 15:11:12.508226 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-07-15 15:11:12.530186 (MainThread): Parsing macros\materializations\table\table.sql
+2020-07-15 15:11:12.540245 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-07-15 15:11:12.547246 (MainThread): Parsing macros\materializations\view\view.sql
+2020-07-15 15:11:12.556250 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-07-15 15:11:12.559246 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-07-15 15:11:12.560250 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-07-15 15:11:12.562216 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-07-15 15:11:12.565216 (MainThread): Parsing macros\adapters.sql
+2020-07-15 15:11:12.595246 (MainThread): Parsing macros\catalog.sql
+2020-07-15 15:11:12.598246 (MainThread): Parsing macros\materializations\incremental.sql
+2020-07-15 15:11:12.611190 (MainThread): Parsing macros\materializations\merge.sql
+2020-07-15 15:11:12.613247 (MainThread): Parsing macros\materializations\table.sql
+2020-07-15 15:11:12.619246 (MainThread): Parsing macros\materializations\view.sql
+2020-07-15 15:11:12.650247 (MainThread): Partial parsing not enabled
+2020-07-15 15:11:12.702187 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:11:12.702187 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:11:12.750186 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:11:12.750186 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:11:13.070185 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 15:11:13.071185 (MainThread): 
+2020-07-15 15:11:13.073200 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 15:11:13.073200 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:11:13.078186 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_analytics".
+2020-07-15 15:11:13.078186 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 15:11:13.098185 (ThreadPoolExecutor-0_0): Using snowflake connection "list_analytics".
+2020-07-15 15:11:13.098185 (ThreadPoolExecutor-0_0): On list_analytics: /* executed by dbt */
+
+    show terse schemas in database analytics
+    limit 10000
+2020-07-15 15:11:13.391257 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='c:\\users\\abize\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\certifi\\cacert.pem'>
+2020-07-15 15:11:13.801274 (ThreadPoolExecutor-0_0): Snowflake query id: 019595cf-0034-e01c-0000-00001185c711
+2020-07-15 15:11:13.801274 (ThreadPoolExecutor-0_0): Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+2020-07-15 15:11:13.801274 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2020-07-15 15:11:13.801274 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2020-07-15 15:11:13.802273 (MainThread): Connection 'master' was properly closed.
+2020-07-15 15:11:13.802273 (MainThread): Connection 'list_analytics' was left open.
+2020-07-15 15:11:13.802273 (MainThread): On list_analytics: Close
+2020-07-15 15:11:13.849846 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FE329D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FE326F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0FE32490>]}
+2020-07-15 15:11:13.849846 (MainThread): Flushing usage events
+2020-07-15 15:11:14.251992 (MainThread): Encountered an error:
+2020-07-15 15:11:14.252992 (MainThread): Runtime Error
+  Database error while listing schemas in database "analytics"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+2020-07-15 15:11:14.275989 (MainThread): Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 158, in exception_handler
+    yield
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\cursor.py", line 597, in execute
+    errvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 97, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 73, in default_errorhandler
+    done_format_msg=errorvalue.get(u'done_format_msg'))
+snowflake.connector.errors.ProgrammingError: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 102, in list_schemas
+    kwargs={'database': database}
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 976, in execute_macro
+    result = macro_function(**kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 96, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 228, in execute
+    fetch=fetch
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 119, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 306, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 82, in add_query
+    return connection, cursor
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 177, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002043 (02000): SQL compilation error:
+  Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 212, in run_from_args
+    results = task.run()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 489, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 425, in result
+    return self.__get_result()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 470, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 109, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "analytics"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+2020-07-15 15:11:47.512887 (MainThread): Running with dbt=0.17.0
+2020-07-15 15:11:47.951891 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\abize\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 15:11:47.951891 (MainThread): Tracking: tracking
+2020-07-15 15:11:47.952891 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10478850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104785F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10478210>]}
+2020-07-15 15:11:47.981877 (MainThread): Partial parsing not enabled
+2020-07-15 15:11:47.986891 (MainThread): Parsing macros\core.sql
+2020-07-15 15:11:47.992890 (MainThread): Parsing macros\adapters\common.sql
+2020-07-15 15:11:48.055895 (MainThread): Parsing macros\etc\datetime.sql
+2020-07-15 15:11:48.067877 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-07-15 15:11:48.069877 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-07-15 15:11:48.071849 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-07-15 15:11:48.074878 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-07-15 15:11:48.077877 (MainThread): Parsing macros\etc\query.sql
+2020-07-15 15:11:48.078909 (MainThread): Parsing macros\materializations\helpers.sql
+2020-07-15 15:11:48.089894 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-07-15 15:11:48.108897 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-07-15 15:11:48.110894 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-07-15 15:11:48.119894 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-07-15 15:11:48.148899 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-07-15 15:11:48.186880 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-07-15 15:11:48.188878 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-07-15 15:11:48.212899 (MainThread): Parsing macros\materializations\table\table.sql
+2020-07-15 15:11:48.221894 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-07-15 15:11:48.228878 (MainThread): Parsing macros\materializations\view\view.sql
+2020-07-15 15:11:48.237878 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-07-15 15:11:48.240879 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-07-15 15:11:48.241895 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-07-15 15:11:48.243899 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-07-15 15:11:48.246896 (MainThread): Parsing macros\adapters.sql
+2020-07-15 15:11:48.275887 (MainThread): Parsing macros\catalog.sql
+2020-07-15 15:11:48.278878 (MainThread): Parsing macros\materializations\incremental.sql
+2020-07-15 15:11:48.291848 (MainThread): Parsing macros\materializations\merge.sql
+2020-07-15 15:11:48.295854 (MainThread): Parsing macros\materializations\table.sql
+2020-07-15 15:11:48.301855 (MainThread): Parsing macros\materializations\view.sql
+2020-07-15 15:11:48.340851 (MainThread): Partial parsing not enabled
+2020-07-15 15:11:48.402374 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:11:48.402374 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:11:48.442374 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:11:48.442374 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:11:48.760374 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 15:11:48.762376 (MainThread): 
+2020-07-15 15:11:48.763377 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 15:11:48.763377 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:11:48.768376 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_ANALYTICS".
+2020-07-15 15:11:48.768376 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 15:11:48.788375 (ThreadPoolExecutor-0_0): Using snowflake connection "list_ANALYTICS".
+2020-07-15 15:11:48.789375 (ThreadPoolExecutor-0_0): On list_ANALYTICS: /* executed by dbt */
+
+    show terse schemas in database ANALYTICS
+    limit 10000
+2020-07-15 15:11:49.050935 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='c:\\users\\abize\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\certifi\\cacert.pem'>
+2020-07-15 15:11:49.521773 (ThreadPoolExecutor-0_0): Snowflake query id: 019595cf-007c-3760-0000-00001185d6f5
+2020-07-15 15:11:49.521773 (ThreadPoolExecutor-0_0): Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+2020-07-15 15:11:49.522772 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2020-07-15 15:11:49.522772 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2020-07-15 15:11:49.522772 (MainThread): Connection 'master' was properly closed.
+2020-07-15 15:11:49.523772 (MainThread): Connection 'list_ANALYTICS' was left open.
+2020-07-15 15:11:49.523772 (MainThread): On list_ANALYTICS: Close
+2020-07-15 15:11:49.571771 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105E4E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105E4950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105E40F0>]}
+2020-07-15 15:11:49.572775 (MainThread): Flushing usage events
+2020-07-15 15:11:49.868771 (MainThread): Encountered an error:
+2020-07-15 15:11:49.869799 (MainThread): Runtime Error
+  Database error while listing schemas in database "ANALYTICS"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+2020-07-15 15:11:49.894800 (MainThread): Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 158, in exception_handler
+    yield
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\cursor.py", line 597, in execute
+    errvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 97, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\snowflake\connector\errors.py", line 73, in default_errorhandler
+    done_format_msg=errorvalue.get(u'done_format_msg'))
+snowflake.connector.errors.ProgrammingError: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 102, in list_schemas
+    kwargs={'database': database}
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 976, in execute_macro
+    result = macro_function(**kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 96, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\clients\jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\base\impl.py", line 228, in execute
+    fetch=fetch
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 119, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 306, in add_query
+    abridge_sql_log=abridge_sql_log
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\sql\connections.py", line 82, in add_query
+    return connection, cursor
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\connections.py", line 177, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002043 (02000): SQL compilation error:
+  Object does not exist, or operation cannot be performed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\main.py", line 212, in run_from_args
+    results = task.run()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 489, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 425, in result
+    return self.__get_result()
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\concurrent\futures\thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\task\runnable.py", line 470, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "c:\users\abize\appdata\local\programs\python\python36-32\lib\site-packages\dbt\adapters\snowflake\impl.py", line 109, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "ANALYTICS"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+
+2020-07-15 15:30:28.233126 (MainThread): Running with dbt=0.17.0
+2020-07-15 15:30:28.676142 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='C:\\Users\\abize\\.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 15:30:28.677146 (MainThread): Tracking: tracking
+2020-07-15 15:30:28.677146 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102CC510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102CC530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102CC210>]}
+2020-07-15 15:30:28.705125 (MainThread): Partial parsing not enabled
+2020-07-15 15:30:28.710126 (MainThread): Parsing macros\core.sql
+2020-07-15 15:30:28.716126 (MainThread): Parsing macros\adapters\common.sql
+2020-07-15 15:30:28.779138 (MainThread): Parsing macros\etc\datetime.sql
+2020-07-15 15:30:28.791125 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2020-07-15 15:30:28.792098 (MainThread): Parsing macros\etc\get_custom_database.sql
+2020-07-15 15:30:28.795125 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2020-07-15 15:30:28.798129 (MainThread): Parsing macros\etc\is_incremental.sql
+2020-07-15 15:30:28.800126 (MainThread): Parsing macros\etc\query.sql
+2020-07-15 15:30:28.802125 (MainThread): Parsing macros\materializations\helpers.sql
+2020-07-15 15:30:28.812125 (MainThread): Parsing macros\materializations\common\merge.sql
+2020-07-15 15:30:28.830126 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2020-07-15 15:30:28.833125 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2020-07-15 15:30:28.842145 (MainThread): Parsing macros\materializations\seed\seed.sql
+2020-07-15 15:30:28.869125 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2020-07-15 15:30:28.905126 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2020-07-15 15:30:28.907131 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2020-07-15 15:30:28.929125 (MainThread): Parsing macros\materializations\table\table.sql
+2020-07-15 15:30:28.939122 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2020-07-15 15:30:28.945126 (MainThread): Parsing macros\materializations\view\view.sql
+2020-07-15 15:30:28.954125 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2020-07-15 15:30:28.957126 (MainThread): Parsing macros\schema_tests\not_null.sql
+2020-07-15 15:30:28.958125 (MainThread): Parsing macros\schema_tests\relationships.sql
+2020-07-15 15:30:28.960125 (MainThread): Parsing macros\schema_tests\unique.sql
+2020-07-15 15:30:28.962125 (MainThread): Parsing macros\adapters.sql
+2020-07-15 15:30:28.991126 (MainThread): Parsing macros\catalog.sql
+2020-07-15 15:30:28.993125 (MainThread): Parsing macros\materializations\incremental.sql
+2020-07-15 15:30:29.008097 (MainThread): Parsing macros\materializations\merge.sql
+2020-07-15 15:30:29.012097 (MainThread): Parsing macros\materializations\table.sql
+2020-07-15 15:30:29.018099 (MainThread): Parsing macros\materializations\view.sql
+2020-07-15 15:30:29.053096 (MainThread): Partial parsing not enabled
+2020-07-15 15:30:29.100136 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:30:29.100136 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:30:29.139144 (MainThread): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:30:29.139144 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:30:29.457101 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 136 macros, 0 operations, 0 seed files, 0 sources
+2020-07-15 15:30:29.458097 (MainThread): 
+2020-07-15 15:30:29.459099 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 15:30:29.459099 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:30:29.465099 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_ANALYTICS".
+2020-07-15 15:30:29.465099 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 15:30:29.487140 (ThreadPoolExecutor-0_0): Using snowflake connection "list_ANALYTICS".
+2020-07-15 15:30:29.487140 (ThreadPoolExecutor-0_0): On list_ANALYTICS: /* executed by dbt */
+
+    show terse schemas in database ANALYTICS
+    limit 10000
+2020-07-15 15:30:29.881806 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='c:\\users\\abize\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\certifi\\cacert.pem'>
+2020-07-15 15:30:30.373794 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 1 in 0.89 seconds
+2020-07-15 15:30:30.382793 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "create_ANALYTICS_dbt_abizerjafferjee".
+2020-07-15 15:30:30.382793 (ThreadPoolExecutor-0_0): Re-using an available connection from the pool (formerly list_ANALYTICS).
+2020-07-15 15:30:30.382793 (ThreadPoolExecutor-0_0): Creating schema "ANALYTICS.dbt_abizerjafferjee"
+2020-07-15 15:30:30.389793 (ThreadPoolExecutor-0_0): Using snowflake connection "create_ANALYTICS_dbt_abizerjafferjee".
+2020-07-15 15:30:30.389793 (ThreadPoolExecutor-0_0): On create_ANALYTICS_dbt_abizerjafferjee: BEGIN
+2020-07-15 15:30:30.467399 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 1 in 0.08 seconds
+2020-07-15 15:30:30.467399 (ThreadPoolExecutor-0_0): Using snowflake connection "create_ANALYTICS_dbt_abizerjafferjee".
+2020-07-15 15:30:30.467399 (ThreadPoolExecutor-0_0): On create_ANALYTICS_dbt_abizerjafferjee: /* executed by dbt */
+create schema if not exists ANALYTICS.dbt_abizerjafferjee
+2020-07-15 15:30:30.596824 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 1 in 0.13 seconds
+2020-07-15 15:30:30.597824 (ThreadPoolExecutor-0_0): On create_ANALYTICS_dbt_abizerjafferjee: COMMIT
+2020-07-15 15:30:30.597824 (ThreadPoolExecutor-0_0): Using snowflake connection "create_ANALYTICS_dbt_abizerjafferjee".
+2020-07-15 15:30:30.598859 (ThreadPoolExecutor-0_0): On create_ANALYTICS_dbt_abizerjafferjee: COMMIT
+2020-07-15 15:30:30.683823 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 1 in 0.08 seconds
+2020-07-15 15:30:30.699821 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_ANALYTICS_dbt_abizerjafferjee".
+2020-07-15 15:30:30.700861 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-07-15 15:30:30.711826 (ThreadPoolExecutor-1_0): Using snowflake connection "list_ANALYTICS_dbt_abizerjafferjee".
+2020-07-15 15:30:30.711826 (ThreadPoolExecutor-1_0): On list_ANALYTICS_dbt_abizerjafferjee: /* executed by dbt */
+
+    show terse objects in ANALYTICS.dbt_abizerjafferjee
+2020-07-15 15:30:31.262820 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 0 in 0.55 seconds
+2020-07-15 15:30:31.263820 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 15:30:31.264820 (MainThread): Opening a new connection, currently in state init
+2020-07-15 15:30:31.264820 (MainThread): Using snowflake connection "master".
+2020-07-15 15:30:31.264820 (MainThread): On master: BEGIN
+2020-07-15 15:30:32.026973 (MainThread): SQL status: SUCCESS 1 in 0.76 seconds
+2020-07-15 15:30:32.028015 (MainThread): On master: COMMIT
+2020-07-15 15:30:32.028015 (MainThread): Using snowflake connection "master".
+2020-07-15 15:30:32.028015 (MainThread): On master: COMMIT
+2020-07-15 15:30:32.135752 (MainThread): SQL status: SUCCESS 1 in 0.11 seconds
+2020-07-15 15:30:32.135752 (MainThread): 11:30:32 | Concurrency: 1 threads (target='dev')
+2020-07-15 15:30:32.136744 (MainThread): 11:30:32 | 
+2020-07-15 15:30:32.139697 (Thread-1): Began running node model.dbt_snowflake_finance.my_first_dbt_model
+2020-07-15 15:30:32.141701 (Thread-1): 11:30:32 | 1 of 2 START table model dbt_abizerjafferjee.my_first_dbt_model...... [RUN]
+2020-07-15 15:30:32.151700 (Thread-1): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:30:32.151700 (Thread-1): Opening a new connection, currently in state init
+2020-07-15 15:30:32.151700 (Thread-1): Compiling model.dbt_snowflake_finance.my_first_dbt_model
+2020-07-15 15:30:32.180698 (Thread-1): Writing injected SQL for node "model.dbt_snowflake_finance.my_first_dbt_model"
+2020-07-15 15:30:32.183701 (Thread-1): finished collecting timing info
+2020-07-15 15:30:32.235706 (Thread-1): Writing runtime SQL for node "model.dbt_snowflake_finance.my_first_dbt_model"
+2020-07-15 15:30:32.239745 (Thread-1): Using snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:30:32.240752 (Thread-1): On model.dbt_snowflake_finance.my_first_dbt_model: BEGIN
+2020-07-15 15:30:32.771837 (Thread-1): SQL status: SUCCESS 1 in 0.53 seconds
+2020-07-15 15:30:32.771837 (Thread-1): Using snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:30:32.771837 (Thread-1): On model.dbt_snowflake_finance.my_first_dbt_model: /* executed by dbt */
+
+
+      create or replace transient table ANALYTICS.dbt_abizerjafferjee.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2020-07-15 15:30:33.646306 (Thread-1): SQL status: SUCCESS 1 in 0.87 seconds
+2020-07-15 15:30:33.649309 (Thread-1): On model.dbt_snowflake_finance.my_first_dbt_model: COMMIT
+2020-07-15 15:30:33.649309 (Thread-1): Using snowflake connection "model.dbt_snowflake_finance.my_first_dbt_model".
+2020-07-15 15:30:33.649309 (Thread-1): On model.dbt_snowflake_finance.my_first_dbt_model: COMMIT
+2020-07-15 15:30:33.763310 (Thread-1): SQL status: SUCCESS 1 in 0.11 seconds
+2020-07-15 15:30:33.779308 (Thread-1): finished collecting timing info
+2020-07-15 15:30:33.780309 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '28039ee7-929a-4de3-9d93-da60618db4eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10AD6C70>]}
+2020-07-15 15:30:33.781308 (Thread-1): 11:30:33 | 1 of 2 OK created table model dbt_abizerjafferjee.my_first_dbt_model. [SUCCESS 1 in 1.63s]
+2020-07-15 15:30:33.783307 (Thread-1): Finished running node model.dbt_snowflake_finance.my_first_dbt_model
+2020-07-15 15:30:33.784305 (Thread-1): Began running node model.dbt_snowflake_finance.my_second_dbt_model
+2020-07-15 15:30:33.786308 (Thread-1): 11:30:33 | 2 of 2 START view model dbt_abizerjafferjee.my_second_dbt_model...... [RUN]
+2020-07-15 15:30:33.794306 (Thread-1): Acquiring new snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:30:33.794306 (Thread-1): Re-using an available connection from the pool (formerly model.dbt_snowflake_finance.my_first_dbt_model).
+2020-07-15 15:30:33.794306 (Thread-1): Compiling model.dbt_snowflake_finance.my_second_dbt_model
+2020-07-15 15:30:33.809343 (Thread-1): Writing injected SQL for node "model.dbt_snowflake_finance.my_second_dbt_model"
+2020-07-15 15:30:33.810341 (Thread-1): finished collecting timing info
+2020-07-15 15:30:33.844305 (Thread-1): Writing runtime SQL for node "model.dbt_snowflake_finance.my_second_dbt_model"
+2020-07-15 15:30:33.845307 (Thread-1): Using snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:30:33.845307 (Thread-1): On model.dbt_snowflake_finance.my_second_dbt_model: BEGIN
+2020-07-15 15:30:33.919310 (Thread-1): SQL status: SUCCESS 1 in 0.07 seconds
+2020-07-15 15:30:33.919310 (Thread-1): Using snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:30:33.919310 (Thread-1): On model.dbt_snowflake_finance.my_second_dbt_model: /* executed by dbt */
+
+  create or replace  view ANALYTICS.dbt_abizerjafferjee.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from ANALYTICS.dbt_abizerjafferjee.my_first_dbt_model
+where id = 1
+  );
+2020-07-15 15:30:34.128773 (Thread-1): SQL status: SUCCESS 1 in 0.21 seconds
+2020-07-15 15:30:34.129766 (Thread-1): On model.dbt_snowflake_finance.my_second_dbt_model: COMMIT
+2020-07-15 15:30:34.130767 (Thread-1): Using snowflake connection "model.dbt_snowflake_finance.my_second_dbt_model".
+2020-07-15 15:30:34.130767 (Thread-1): On model.dbt_snowflake_finance.my_second_dbt_model: COMMIT
+2020-07-15 15:30:34.215518 (Thread-1): SQL status: SUCCESS 1 in 0.08 seconds
+2020-07-15 15:30:34.223519 (Thread-1): finished collecting timing info
+2020-07-15 15:30:34.225519 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '28039ee7-929a-4de3-9d93-da60618db4eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109BDE50>]}
+2020-07-15 15:30:34.228518 (Thread-1): 11:30:34 | 2 of 2 OK created view model dbt_abizerjafferjee.my_second_dbt_model. [SUCCESS 1 in 0.43s]
+2020-07-15 15:30:34.230472 (Thread-1): Finished running node model.dbt_snowflake_finance.my_second_dbt_model
+2020-07-15 15:30:34.261935 (MainThread): Using snowflake connection "master".
+2020-07-15 15:30:34.262888 (MainThread): On master: BEGIN
+2020-07-15 15:30:34.345935 (MainThread): SQL status: SUCCESS 1 in 0.08 seconds
+2020-07-15 15:30:34.345935 (MainThread): On master: COMMIT
+2020-07-15 15:30:34.345935 (MainThread): Using snowflake connection "master".
+2020-07-15 15:30:34.345935 (MainThread): On master: COMMIT
+2020-07-15 15:30:34.487998 (MainThread): SQL status: SUCCESS 1 in 0.14 seconds
+2020-07-15 15:30:34.488998 (MainThread): 11:30:34 | 
+2020-07-15 15:30:34.488998 (MainThread): 11:30:34 | Finished running 1 table model, 1 view model in 5.03s.
+2020-07-15 15:30:34.489998 (MainThread): Connection 'master' was left open.
+2020-07-15 15:30:34.489998 (MainThread): On master: Close
+2020-07-15 15:30:34.614105 (MainThread): Connection 'create_ANALYTICS_dbt_abizerjafferjee' was left open.
+2020-07-15 15:30:34.615102 (MainThread): On create_ANALYTICS_dbt_abizerjafferjee: Close
+2020-07-15 15:30:34.725985 (MainThread): Connection 'list_ANALYTICS_dbt_abizerjafferjee' was left open.
+2020-07-15 15:30:34.725985 (MainThread): On list_ANALYTICS_dbt_abizerjafferjee: Close
+2020-07-15 15:30:34.831871 (MainThread): Connection 'model.dbt_snowflake_finance.my_second_dbt_model' was left open.
+2020-07-15 15:30:34.831871 (MainThread): On model.dbt_snowflake_finance.my_second_dbt_model: Close
+2020-07-15 15:30:34.942383 (MainThread): 
+2020-07-15 15:30:34.943059 (MainThread): Completed successfully
+2020-07-15 15:30:34.944072 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2020-07-15 15:30:34.958072 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10A5BD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10A5B910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10A1C110>]}
+2020-07-15 15:30:34.958072 (MainThread): Flushing usage events
